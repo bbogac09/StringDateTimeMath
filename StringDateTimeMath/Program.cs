@@ -72,6 +72,33 @@ namespace StringDateTimeMath
             //Hello! My name is Leo Alsaç
             sentence = sentence.Remove(0, 7); // My name is Leo Alsaç
 
+            string[] words = sentence.Split(' ');
+            foreach (string word in words)
+            {
+                Console.WriteLine(word);
+            }
+            Console.WriteLine(words[3]); // Leo
+
+            string test1 = "test1";
+            string test2 = "test2";
+            if (test1 == test2)
+                Console.WriteLine("test1 = test2");
+            else
+                Console.WriteLine("test1 != test2");
+
+            if (test1.Equals(test2))
+                Console.WriteLine("test1 = test2");
+            else
+                Console.WriteLine("test1 != test2");
+
+            string adSoyad = " Çağıl Alsaç ";
+            Console.WriteLine("\"" + adSoyad + "\"");
+            Console.WriteLine("\"" + adSoyad.Trim() + "\""); //Trim başındaki ve sonundaki boşlukları traşlar.
+            Console.WriteLine("\"" + adSoyad.TrimStart() + "\""); //Başındakileri
+            Console.WriteLine("\"" + adSoyad.TrimEnd() + "\""); //Sonundakileri
+            Console.WriteLine(adSoyad.Contains("ğ") ? "ğ var" : "ğ yok");
+
+
 
             Console.ReadLine();
         }

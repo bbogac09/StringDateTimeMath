@@ -13,10 +13,11 @@ namespace IlkHarfBuyukDigerleriKucukDemo
             string ad = "çAğIl";
                 string sonuc = FirstLetterToUpperOthersToLower(ad);
             Console.WriteLine(sonuc);
-
+            #region
             string bogac = BogacMethodu(ad);
             Console.WriteLine(bogac);
             Console.ReadLine();
+            #endregion 
         }
 
         static string FirstLetterToUpperOthersToLower(string value) // feneRBahçE -> Fenerbahçe
