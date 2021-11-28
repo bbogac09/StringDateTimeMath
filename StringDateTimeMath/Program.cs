@@ -115,6 +115,7 @@ namespace StringDateTimeMath
             Console.WriteLine(simdi.ToLongDateString());
             Console.WriteLine(simdi.ToShortTimeString());
             Console.WriteLine(simdi.ToLongTimeString());
+            Console.WriteLine(simdi.Month + "/" + simdi.Day + "/" + simdi.Year + "/" + simdi.Hour + ":" + simdi.Minute + ":" +  simdi.Second + "." + simdi.Millisecond);
             Console.ReadLine();
         }
     }
