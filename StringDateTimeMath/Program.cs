@@ -98,8 +98,23 @@ namespace StringDateTimeMath
             Console.WriteLine("\"" + adSoyad.TrimEnd() + "\""); //Sonundakileri
             Console.WriteLine(adSoyad.Contains("ğ") ? "ğ var" : "ğ yok");
 
+            string name = "Boğaç";
+            string escapedName = "\"Boğaç\""; // "Boğaç"
+            Console.WriteLine(escapedName);
+            String surname = "Bakkaloğlu";
+            escapedName = name + "\n" + surname;
+            Console.WriteLine(escapedName);
+            escapedName = name + "\t" + surname;
+            Console.WriteLine(escapedName);
+            string path1 = "C:\\BA\\Console"; // C:\BA\Console
+            path1 = @"C:\BA\Console"; // C:\BA\Console (üsttekiyle aynı sonucu verir.)
 
-
+            DateTime simdi = DateTime.Now;
+            Console.WriteLine(simdi);
+            Console.WriteLine(simdi.ToShortDateString());
+            Console.WriteLine(simdi.ToLongDateString());
+            Console.WriteLine(simdi.ToShortTimeString());
+            Console.WriteLine(simdi.ToLongTimeString());
             Console.ReadLine();
         }
     }
